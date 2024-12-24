@@ -223,7 +223,170 @@ let Tab=[10,"Sayed","khadija","90",9000, 100,20,"10",-20,-10];
 
  //joining Arrays :
 
- let amis=["safae","salma","fatij"]
+ let amis=["safae","salma","fati"] ;
+
+
+ ac.ma
+​
+document.write("<h3>Hello from tangier</h3>");
+console.log("I'm Imane");
+console.log("Hello from %ctangier","color:blue ;font-size:30px");
+
+let d="-100";
+ e ="20";
+ f=30;
+ g=true;
+ console.log(-d *20);
+ console.log(+e);
+ console.log(typeof(+d));
+ //********** string challenge */
+ let a= "Elzero web school" ;
+ console.log(a);
+ console.log(a.toUpperCase());
+ console.log(a.slice(2,6).toUpperCase());
+
+ console.log(a.slice(13,14).toUpperCase().repeat(8));
+
+ console.log(a.split(" ",1));
+ console.log(a.substr(0,6));
+ console.log(a.slice(0,2).toLowerCase()+a.slice(2).toUpperCase());
+
+
+ // JOINING ARRAYS
+ let amis=["Ahmed","Sayed","Ali","Osama","Gamal","Ameer"];
+ let nouveau=["Samar","sameh"];
+ let school=["Haytham","Shady"];
+
+ let allFriends = amis.concat(nouveau,school,"safae","fati",[1,2]); //concat the content of array nouveau in amis 
+ console.log(allFriends);
+ console.log(allFriends.join()); //joining the arrays
+ console.log(allFriends.join("  ,").toUpperCase());
+
+ //challenge array :
+
+ let zero=0;
+ let counter =3;
+ let my=["ahmed","mazero","elham","osama","gamal","ameer"];
+
+ console.log(my.slice(length-2));
+ //LOOP -For And :
+// syntaxe:
+//for ([1] [2] [3]){
+//  block of code }
+ 
+for(i=0; i<10; i++){
+    console.log(i);
+}
+
+//looping On sequences  "العناصر":
+ let myFriends=[ 12,3,"osama","ahmed","sayed","ali","amira",1000];
+
+//  console.log(myFriends[0]);
+//  console.log(myFriends[1]);
+//  console.log(myFriends[2]);
+//  console.log(myFriends[3]);
+//  console.log(myFriends[4]);
+
+ for(i=0; i<myFriends.length;i++){
+    console.log(myFriends[i]);
+ }
+ let OnlyNames =[];
+
+ for(i=0; i<myFriends.length;i++){
+    if(typeof myFriends[i]==="string"){
+        OnlyNames.push(myFriends[i]);
+    }
+ }
+ 
+ console.log(OnlyNames);
+
+ for(i=0;i<OnlyNames.length; i++){
+    console.log(OnlyNames[i]);
+ }
+
+ //looping On :
+//   Nested Loops :loop in loop
+//  
+// let products= ["Keyboard","mouse","pen","pad","monitor"];
+// let colors=["Red","Green","Black"];
+// let models=[2020, 2021];
+
+// for(i=0; i<products.length;i++){
+//     console.log("#".repeat(10));
+//     console.log(`# ${products[i]} `);
+//     console.log("#".repeat(10));
+//     console.log(" -colors:");
+//     for(j=0;j<colors.length;j++){
+//         console.log(`${colors[j]}`);
+       
+//     }
+//     console.log(" -Models:");
+//     for(k=0;k<models.length;k++){
+//         console.log(`${models[k]}`);
+// }
+// }
+//loop control :
+// let products= ["Keyboard","mouse", "pen","pad","monitor"];
+// let colors=["Red","Green","Black"];
+// let Onlynames=[];
+
+//  for(i=0;i<products.length;i++){
+//     if(typeof products[i]==="string"){
+//     Onlynames.push(products[i]); //push the content products in onlynames array ;
+//     }
+//  };
+
+//  console.log(Onlynames);
+
+// for(i=0;i<products.length;i++){
+//     if(typeof products[i]==="number"){
+//         continue;
+//     }
+//     console.log(`# ${products[i]} ` );
+// }
+
+//  mainloop :for( let i=0;i<products.length;i++){
+//     console.log(products[i]);
+//    Nestedloop:for( let j=0;j<colors.length;j++){
+//         console.log(`- ${colors[j]}`);
+//         if(colors[j]== "Green"){
+//             break Nestedloop;
+//         }
+//     }
+// };
+
+//Loop For Advanced exemple :
+// let products= ["Keyboard","mouse", "pen","pad","monitor"];
+// for(let i = 0;;){
+//         console.log(products[i]);
+//         i =i+2;
+//         if(i === products.length){
+//             break;
+//         }
+//     };
+
+// Practice :
+let products= ["Keyboard","mouse","pen","pad","monitor","iPhone"];
+let colors=["Red","Green","Black"];
+let Count= 5;
+for(i=0 ;i<Count;i++){
+    document.write(`<div>`);
+    document.write((`<h4>[${i+1}]${products[i]}</h4>`));
+    for(let j= 0;j<colors.length ;j++){
+        // document.write(`<p> - ${colors[j]}</p>`);
+    }
+    document.write(`<p> - ${colors.join(" | ")}</p>`); //joining the colors
+    document.write(`</div>`);
+}
+
+//loop while :
+
+let product =["Keyboard","mouse","pen","pad","monitor","iPhone" ];
+let index = 0;
+while(index <10){
+  console.log(index);
+  index++;
+};
  
 
 
