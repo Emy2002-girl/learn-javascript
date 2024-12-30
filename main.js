@@ -943,10 +943,59 @@ console.log(solution);
 //   console.log(this);
 // };
 
-let user = {
-  age : 22 ,
-  ageInDays : function(){
-    return user.age*365;
-  }
+// let user = {
+//   age : 22 ,
+//   ageInDays : function(){
+//     return user.age*365;
+//   }
+// };
+// console.log(user.ageInDays());
+
+let user={
+      age : 20,
+   doubleAge : function(){
+      return this.age*2;   
+   }
+}
+console.log(user.age);
+console.log(user.doubleAge());
+
+let Obj = Object.create(user);
+Obj.age = 12;
+console.log(Obj.age);
+console.log(Obj.doubleAge());
+
+// Creat Object with assign method : 
+
+let obj1 = {
+  prop1: 1,
+  meth1: function () {
+    return this.prop1;
+  },
 };
-console.log(user.ageInDays());
+
+let obj2 = {
+  prop2: 2,
+  meth2: function () {
+    return this.prop2;
+  },
+};
+
+let targetObject = {
+  prop1: 100,
+  prop3: 3,
+};
+let target = {
+   prop1: 2,
+   prop2: 10,
+}
+
+let finalObject = Object.assign(targetObject, obj1, obj2); //the targetObject is the object to copy to 
+finalObject.prop1 = 40;
+finalObject.prop2 = 120;
+console.log(finalObject);
+
+let neW = Object.assign(target, obj1, obj2);
+console.log(neW);
+//DOM  document object model  :
+ 
