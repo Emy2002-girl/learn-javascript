@@ -26,7 +26,7 @@ document.getElementById("calcul").addEventListener("click", () => {
         case "add":
             result = selectNumber + userInput;
             break;
-        case "subtract":
+        case "soust":
             result = selectNumber - userInput;
             break;
         case "multiple":
