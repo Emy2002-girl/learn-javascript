@@ -22,6 +22,13 @@ document.getElementById("calclution").addEventListener("click",()=>{
         alert("please enter a valid number");
         return;
     }
+    if(userInput === selectNumber){
+        alert("existe");
+    }
+    else{
+        alert("n'existe pas");
+
+    }
     switch(operation){
         case "add":
         result=selectNumber+userInput;
