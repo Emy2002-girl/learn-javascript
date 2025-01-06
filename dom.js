@@ -53,7 +53,7 @@
 //     }
 // }
 // else{
-//    myP.setAttribute("data-src","New Value"); 
+//    myP.setAttribute("data-src","New Value");
 // };
 
 // if(myP.hasAttributes){
@@ -117,18 +117,16 @@
 
 // Deal with  children's:
 
-let myElement = document.querySelector("div");
+// let myElement = document.querySelector("div");
 
-console.log(myElement);
-console.log(myElement.children[1]);
-console.log(myElement.childNodes);
+// console.log(myElement);
+// console.log(myElement.children);
+// console.log(myElement.childNodes);
+// console.log(myElement.childNodes[0]);
 
+// console.log(myElement.firstChild);
+// console.log(myElement.lastChild);
+// console.log(myElement.firstElementChild);
+// console.log(myElement.lastElementChild);
 
-
-
-
-
-
-
-
-
+//DOM Events :
