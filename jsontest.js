@@ -9,15 +9,22 @@ fetch("jsontest.json")
         selectNumber.appendChild(option);
     });
 })
-.catch((error) => console.log("loading error", error));
-
+.catch((error) => console.error("loading error", error));
+let myarray = document.createElement("div");
 document.getElementById("calcul").addEventListener("click", () => {
+    // Vérifier si aucune opération n'a été choisie
+    const selectedOperation = document.querySelector("input[name='operation']:checked");
+    if (!selectedOperation) {
+        alert("Please select an operation");
+        return;  // Empêche l'exécution du reste du code
+    }
+
     const selectNumber = parseFloat(document.getElementById("selectnumber").value);
     const userInput = parseFloat(document.getElementById("userInput").value);
-    const operation = document.querySelector("input[name='operation']:checked").value;
+    const operation = selectedOperation.value;
 
     if (isNaN(userInput)) {
-        alert("enter a valid number");
+        alert("Enter a valid number");
         return;
     }
 
@@ -34,7 +41,7 @@ document.getElementById("calcul").addEventListener("click", () => {
             break;
         case "div":
             if (userInput === 0) {
-                alert("cannot divide by zero");
+                alert("Cannot divide by zero");
                 return;
             }
             result = selectNumber / userInput;
@@ -42,6 +49,5 @@ document.getElementById("calcul").addEventListener("click", () => {
         default:
             result = 0;
     }
-
     document.getElementById("result").textContent = result;
 });
