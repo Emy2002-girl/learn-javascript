@@ -178,21 +178,137 @@
 //     event.preventDefault();
 // }
 
-let cases = document.querySelectorAll(".case");  // Sélectionne toutes les cases
+// let cases = document.querySelectorAll(".case");  // Sélectionne toutes les cases
 
-window.onload = function() {
-    cases[0].focus();  // Le focus commence sur la première case
+// window.onload = function() {
+//     cases[0].focus();  // Le focus commence sur la première case
 
-    // Écoute l'événement input sur chaque case
-    cases.forEach((caseElement, index) => {
-        caseElement.addEventListener("input", function() {
-            // Si l'utilisateur entre un chiffre et que ce n'est pas la dernière case
-            if (caseElement.value.length === 1 && index < cases.length - 1) {
-                cases[index + 1].focus();  // Déplace le focus vers la case suivante
-            }
-        });
-    });
-};
+//     // Écoute l'événement input sur chaque case
+//     cases.forEach((caseElement, index) => {
+//         caseElement.addEventListener("input", function() {
+//             // Si l'utilisateur entre un chiffre et que ce n'est pas la dernière case
+//             if (caseElement.value.length === 1 && index < cases.length - 1) {
+//                 cases[index + 1].focus();  // Déplace le focus vers la case suivante
+//             }
+//         });
+//     });
+// };
+//  add
+//  remove
+//  toggle
+
+
+let myElement = document.getElementById("my-div");
+
+// console.log(myElement.classList);
+// console.log( typeof myElement.classList);
+
+// console.log(myElement.classList.length);
+// console.log(myElement.classList.contains("one"));
+// console.log(myElement.classList.item("1"));
+
+// myElement.onclick = function(){
+//     myElement.classList.toggle("show","two");
+// }
+
+// myElement.style.color = "black";
+// myElement.style.backgroundColor = "lightgray";
+
+// myElement.style.cssText="font-size: 30px; padding:30px; color:black";
+
+// myElement.style.setProperty("font-size","40px");
+// myElement.style.removeProperty("padding");
+
+// document.styleSheets[0].rules[0].style.removeProperty("background-color");
+
+// let creatP = document.createElement("p");
+
+
+// myElement.before("hello from js");
+// // myElement.before(creatP);
+
+// myElement.prepend("Hello world");
+// myElement.remove(creatP);
+
+//traversing dom :
+
+
+// console.log(myElement);
+// let span = document.querySelector(".two");
+
+// console.log(span.nextSibling);
+// console.log(span.nextElementSibling);
+// console.log(span.previousSibling);
+// console.log(span.previousElementSibling);
+// console.log(span.parentElement);
+
+// span.onclick = function(){
+//     span.previousElementSibling.remove();
+// };
+
+// -DOM Cloning : 
+// let myP = document.querySelector("p").cloneNode(true);
+// let mydiv = document.querySelector("div");
+// myP.id=`${myP.id} -clone`;
+// console.log(myP);
+// mydiv.appendChild(myP);
+
+//Addeventlistener :
+let myP = document.querySelector("p");
+
+// myP.onclick = function(){
+//   let clone = document.querySelector("p").cloneNode(true);
+//   document.body.appendChild(clone);
+//   // console.log("message from onclick");
+// }
+
+// function one(){
+//   console.log("cloning from One");
+// }
+// function two(){
+//   console.log("cloning from two");
+// }
+// myP =one();
+// myP = two();
+// document.addEventListener("click",one);
+// document.addEventListener("click",two);
+
+// myP.onclick =function(){
+//   let newP = document.querySelector("p").cloneNode(true);
+//   document.body.appendChild(newP);
+//   newP.className = "clone";
+// }
+
+// // let cloned = document.querySelector(".clone");
+// // cloned.onclick = function(){
+// //   console.log("I'm cloned");
+// // }; //Error 
+
+// document.addEventListener("click",function(e){
+//   if(e.target.className=== "clone"){
+//     console.log("i'M cloned !");
+//   }
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
