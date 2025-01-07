@@ -54,4 +54,22 @@
 //    window.open("https://www.google.com","_blank","width:200,height: 40");
 // },2000);
 
+//  let mywindow = window.open("https://google.com", "_blank", "width =500,height= 500");
 
+let btn = document.querySelector("button");
+window.onscroll = function () {
+    if (window.scrollY >= 500) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";  
+    }
+};
+btn.onclick = function () {
+    // window.scrollTo(0, 0);
+    window.scrollTo({
+        top: 10,
+        left: 0,
+        behavior:"smooth",
+    })
+    btn.style.display = "block";
+}
