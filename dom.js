@@ -52,6 +52,25 @@
 // //    myP.removeAttribute("data-src");
 // //     }
 // // }
+// if(myP.hasAttribute("data-src")){
+//     if(myP.getAttribute("data-src")=== ""){
+//    myP.removeAttribute("data-src");
+//     }
+// }
+// else{
+//    myP.setAttribute("data-src","New Value");
+// };
+
+// if(myP.hasAttributes){
+//     console.log("has attributes");
+// }
+
+// if(document.getElementsByTagName("div")[0].hasAttributes()){
+//     console.log("has attributes")
+// }
+// else{
+//     console.log(" div has no attributes");
+// };
 // // else{
 // //    myP.setAttribute("data-src","New Value"); 
 // // };
@@ -119,189 +138,176 @@
 
 // // let myElement = document.querySelector("div");
 
-// // console.log(myElement);
-// // console.log(myElement.children[1]);
-// // console.log(myElement.childNodes);
+// console.log(myElement);
+// console.log(myElement.children[1]);
+// console.log(myElement.childNodes);
 
-// /*
-//   DOM [Events]
-//   - Use Events On HTML
-//   - Use Events On JS
-//   --- onclick
-//   --- oncontextmenu
-//   --- onmouseenter
-//   --- onmouseleave
+/*
+  DOM [Events]
+  - Use Events On HTML
+  - Use Events On JS
+  --- onclick
+  --- oncontextmenu
+  --- onmouseenter
+  --- onmouseleave
 
-//   --- onload
-//   --- onscroll
-//   --- onresize
+  --- onload
+  --- onscroll
+  --- onresize
 
-//   --- onfocus
-//   --- onblur
-//   --- onsubmit
-// */
+  --- onfocus
+  --- onblur
+  --- onsubmit
+*/
 
-// // let myBtn= document.getElementById("btn");
+// let myBtn= document.getElementById("btn");
 
-// // myBtn.onclick = function(){
-// //     console.log("clicked");
-// // };
-// // let myinp = document.getElementById("inp");
+// myBtn.onclick = function(){
+//     console.log("clicked");
+// };
+// let myinp = document.getElementById("inp");
 
-// // myinp.onfocus = function(){
-// //     console.log("focus");
-// // }
-// // let userInput = document.querySelector("[name = 'username']");
-// // let ageInput = document.querySelector("[name = 'age']");
+// myinp.onfocus = function(){
+//     console.log("focus");
+// }
+// let userInput = document.querySelector("[name = 'username']");
+// let ageInput = document.querySelector("[name = 'age']");
 
-// // document.forms[0].onsubmit = function(e){
-// //     let uservalid = false;
-// //     let agevalid = false;
+// document.forms[0].onsubmit = function(e){
+//     let uservalid = false;
+//     let agevalid = false;
 
-// //     console.log(userInput.value);
-// //     console.log(userInput.value.length);
+//     console.log(userInput.value);
+//     console.log(userInput.value.length);
 
-// //     if(userInput.value !== "" && userInput.value.length <= 10){
-// //         uservalid = true;
-// //     }
-// //     if(ageInput.value !== ""){
-// //         agevalid = true;
-// //     }
-// // if(uservalid === false ||agevalid === false ) {
-// //     e.preventDefault();
-// // }
-// // };
-
-
-// // document.links[0].onclick = function(event){
-// //     console.log(event);
-// //     event.preventDefault();
-// // }
-
-// // let cases = document.querySelectorAll(".case");  // Sélectionne toutes les cases
-
-// // window.onload = function() {
-// //     cases[0].focus();  // Le focus commence sur la première case
-
-// //     // Écoute l'événement input sur chaque case
-// //     cases.forEach((caseElement, index) => {
-// //         caseElement.addEventListener("input", function() {
-// //             // Si l'utilisateur entre un chiffre et que ce n'est pas la dernière case
-// //             if (caseElement.value.length === 1 && index < cases.length - 1) {
-// //                 cases[index + 1].focus();  // Déplace le focus vers la case suivante
-// //             }
-// //         });
-// //     });
-// // };
-// //  add
-// //  remove
-// //  toggle
+//     if(userInput.value !== "" && userInput.value.length <= 10){
+//         uservalid = true;
+//     }
+//     if(ageInput.value !== ""){
+//         agevalid = true;
+//     }
+// if(uservalid === false ||agevalid === false ) {
+//     e.preventDefault();
+// }
+// };
 
 
-// let myElement = document.getElementById("my-div");
+// document.links[0].onclick = function(event){
+//     console.log(event);
+//     event.preventDefault();
+// }
 
-// // console.log(myElement.classList);
-// // console.log( typeof myElement.classList);
+// let cases = document.querySelectorAll(".case");  // Sélectionne toutes les cases
 
-// // console.log(myElement.classList.length);
-// // console.log(myElement.classList.contains("one"));
-// // console.log(myElement.classList.item("1"));
+// window.onload = function() {
+//     cases[0].focus();  // Le focus commence sur la première case
 
-// // myElement.onclick = function(){
-// //     myElement.classList.toggle("show","two");
-// // }
-
-// // myElement.style.color = "black";
-// // myElement.style.backgroundColor = "lightgray";
-
-// // myElement.style.cssText="font-size: 30px; padding:30px; color:black";
-
-// // myElement.style.setProperty("font-size","40px");
-// // myElement.style.removeProperty("padding");
-
-// // document.styleSheets[0].rules[0].style.removeProperty("background-color");
-
-// // let creatP = document.createElement("p");
-
-
-// // myElement.before("hello from js");
-// // // myElement.before(creatP);
-
-// // myElement.prepend("Hello world");
-// // myElement.remove(creatP);
-
-// //traversing dom :
+//     // Écoute l'événement input sur chaque case
+//     cases.forEach((caseElement, index) => {
+//         caseElement.addEventListener("input", function() {
+//             // Si l'utilisateur entre un chiffre et que ce n'est pas la dernière case
+//             if (caseElement.value.length === 1 && index < cases.length - 1) {
+//                 cases[index + 1].focus();  // Déplace le focus vers la case suivante
+//             }
+//         });
+//     });
+// };
+//  add
+//  remove
+//  toggle
 
 
-// // console.log(myElement);
-// // let span = document.querySelector(".two");
+let myElement = document.getElementById("my-div");
 
-// // console.log(span.nextSibling);
-// // console.log(span.nextElementSibling);
-// // console.log(span.previousSibling);
-// // console.log(span.previousElementSibling);
-// // console.log(span.parentElement);
+// console.log(myElement.classList);
+// console.log( typeof myElement.classList);
 
-// // span.onclick = function(){
-// //     span.previousElementSibling.remove();
-// // };
+// console.log(myElement.classList.length);
+// console.log(myElement.classList.contains("one"));
+// console.log(myElement.classList.item("1"));
 
-// // -DOM Cloning : 
-// // let myP = document.querySelector("p").cloneNode(true);
-// // let mydiv = document.querySelector("div");
-// // myP.id=`${myP.id} -clone`;
-// // console.log(myP);
-// // mydiv.appendChild(myP);
+// myElement.onclick = function(){
+//     myElement.classList.toggle("show","two");
+// }
 
-// //Addeventlistener :
-// // let myP = document.querySelector("p");
+// myElement.style.color = "black";
+// myElement.style.backgroundColor = "lightgray";
 
-// // myP.onclick = function(){
-// //   let clone = document.querySelector("p").cloneNode(true);
-// //   document.body.appendChild(clone);
-// //   // console.log("message from onclick");
-// // }
+// myElement.style.cssText="font-size: 30px; padding:30px; color:black";
 
-// // function one(){
-// //   console.log("cloning from One");
-// // }
-// // function two(){
-// //   console.log("cloning from two");
-// // }
-// // myP =one();
-// // myP = two();
-// // document.addEventListener("click",one);
-// // document.addEventListener("click",two);
+// myElement.style.setProperty("font-size","40px");
+// myElement.style.removeProperty("padding");
 
-// // myP.onclick =function(){
-// //   let newP = document.querySelector("p").cloneNode(true);
-// //   document.body.appendChild(newP);
-// //   newP.className = "clone";
-// // }
+// document.styleSheets[0].rules[0].style.removeProperty("background-color");
 
-// // // let cloned = document.querySelector(".clone");
-// // // cloned.onclick = function(){
-// // //   console.log("I'm cloned");
-// // // }; //Error 
+// let creatP = document.createElement("p");
 
-// // document.addEventListener("click",function(e){
-// //   if(e.target.className=== "clone"){
-// //     console.log("i'M cloned !");
-// //   }
-// // });
 
-for(let i = 1;i<=15;i++){
-  let div= document.createElement("div");
-  let mypara = document.createElement("p");
-  let myspan = document.createElement("span");
-  let mytext = document.createTextNode(`${i}`);
-  let mycontent = document.createTextNode("Product");
-  myspan.appendChild(mytext);
-  mypara.appendChild(mycontent);
-  div.appendChild(myspan);
-  div.appendChild(mypara);
-  document.body.appendChild(div);
-}
+// myElement.before("hello from js");
+// // myElement.before(creatP);
+
+// myElement.prepend("Hello world");
+// myElement.remove(creatP);
+
+//traversing dom :
+
+
+// console.log(myElement);
+// let span = document.querySelector(".two");
+
+// console.log(span.nextSibling);
+// console.log(span.nextElementSibling);
+// console.log(span.previousSibling);
+// console.log(span.previousElementSibling);
+// console.log(span.parentElement);
+
+// span.onclick = function(){
+//     span.previousElementSibling.remove();
+// };
+
+// -DOM Cloning : 
+// let myP = document.querySelector("p").cloneNode(true);
+// let mydiv = document.querySelector("div");
+// myP.id=`${myP.id} -clone`;
+// console.log(myP);
+// mydiv.appendChild(myP);
+
+//Addeventlistener :
+let myP = document.querySelector("p");
+
+// myP.onclick = function(){
+//   let clone = document.querySelector("p").cloneNode(true);
+//   document.body.appendChild(clone);
+//   // console.log("message from onclick");
+// }
+
+// function one(){
+//   console.log("cloning from One");
+// }
+// function two(){
+//   console.log("cloning from two");
+// }
+// myP =one();
+// myP = two();
+// document.addEventListener("click",one);
+// document.addEventListener("click",two);
+
+// myP.onclick =function(){
+//   let newP = document.querySelector("p").cloneNode(true);
+//   document.body.appendChild(newP);
+//   newP.className = "clone";
+// }
+
+// // let cloned = document.querySelector(".clone");
+// // cloned.onclick = function(){
+// //   console.log("I'm cloned");
+// // }; //Error 
+
+// document.addEventListener("click",function(e){
+//   if(e.target.className=== "clone"){
+//     console.log("i'M cloned !");
+//   }
+// });
 
 
 
