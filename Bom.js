@@ -51,7 +51,8 @@
 //Open and close window :
   
 // setTimeout(function(){
-//    window.open("https://www.google.com","_blank","width:200,height: 40");
+//    window.open("https://www.google.com","_blank","width=200,height= 40");
 // },2000);
+
 
 
