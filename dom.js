@@ -273,7 +273,7 @@ let myElement = document.getElementById("my-div");
 // mydiv.appendChild(myP);
 
 //Addeventlistener :
-let myP = document.querySelector("p");
+// let myP = document.querySelector("p");
 
 // myP.onclick = function(){
 //   let clone = document.querySelector("p").cloneNode(true);
