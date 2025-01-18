@@ -1,6 +1,9 @@
 // // window.alert("Have a Good day !");
 // // alert("Have a good day ");
+// // window.alert("Have a Good day !");
+// // alert("Have a good day ");
 
+// // let confirmMesg = confirm("Are you sure ?");
 // // let confirmMesg = confirm("Are you sure ?");
 
 // // console.log(confirmMesg);
@@ -11,19 +14,34 @@
 // // else{
 // //     console.log("essayer");
 // // }
+// // if(confirmMesg === true){
+// //     console.log("Action fais");
+// // }
+// // else{
+// //     console.log("essayer");
+// // }
 
 // // let PromptMesg = prompt("choice a day :","enter par 3 caractère");
 
 // //siteTimeout and clearTimeout :
+// //siteTimeout and clearTimeout :
  
+// // let counter = setTimeout(sayMsg,2000,"Imane",22);
 // // let counter = setTimeout(sayMsg,2000,"Imane",22);
 
 // // function sayMsg(user,age){
 // //     console.log(`Hello From tangier I'm ${user} ${age} years old`);
 // // }
+// // function sayMsg(user,age){
+// //     console.log(`Hello From tangier I'm ${user} ${age} years old`);
+// // }
 
 // // let mybtn = document.querySelector("button");
+// // let mybtn = document.querySelector("button");
 
+// // mybtn.onclick = function(){
+// //     clearTimeout(counter);
+// // }
 // // mybtn.onclick = function(){
 // //     clearTimeout(counter);
 // // }
@@ -31,13 +49,21 @@
 // // setInterval(function(){
 // //    console.log("Have a good day");
 // // },1000)
+// // setInterval(function(){
+// //    console.log("Have a good day");
+// // },1000)
 
+// // function sayGood(){
+// //     console.log("Have a good day Imane ");
+// // }
 // // function sayGood(){
 // //     console.log("Have a good day Imane ");
 // // }
 
 // // setInterval(sayGood,1000);
+// // setInterval(sayGood,1000);
 
+// // let mydiv=document.querySelector("div");
 // // let mydiv=document.querySelector("div");
 
 // // function na9es(){
@@ -47,14 +73,26 @@
 // //     }
 // // };
 // //  let counter =setInterval(na9es,1000);
+// // function na9es(){
+// //     mydiv.innerHTML -= 1;
+// //     if(mydiv.innerHTML === "0"){
+// //         clearTimeout(counter);
+// //     }
+// // };
+// //  let counter =setInterval(na9es,1000);
 
+// //Open and close window :
 // //Open and close window :
   
 // // setTimeout(function(){
 // //    window.open("https://www.google.com","_blank","width=200,height= 40");
 // // },2000);
+// // setTimeout(function(){
+// //    window.open("https://www.google.com","_blank","width=200,height= 40");
+// // },2000);
 
 
+// //  let mywindow = window.open("https://google.com", "_blank", "width =500,height= 500");
 // //  let mywindow = window.open("https://google.com", "_blank", "width =500,height= 500");
 
 // // let btn = document.querySelector("button");
@@ -87,7 +125,13 @@
 
 // // //Remove :
 // // window.localStorage.removeItem("fontWeight");
+// // //Remove :
+// // window.localStorage.removeItem("fontWeight");
 
+// //Remove All :
+// // window.localStorage.clear();
+// // document.body.style.backgroundColor=  window.localStorage["backgroundColor"]="green";
+// // console.log(window.localStorage.key(0));
 // //Remove All :
 // // window.localStorage.clear();
 // // document.body.style.backgroundColor=  window.localStorage["backgroundColor"]="green";
@@ -96,7 +140,18 @@
 // //forEach function :
 // // let mylist=document.querySelectorAll("ul li ");
 // // let mydiv=document.querySelectorAll("div");
+// //forEach function :
+// // let mylist=document.querySelectorAll("ul li ");
+// // let mydiv=document.querySelectorAll("div");
 
+// // mylist.forEach(function(element){
+// // element.onclick = function(){
+// //     mylist.forEach((element)=>{
+// //       element.classList.remove("active");
+// //     })
+// //     element.classList.add("active");
+// // }
+// // });
 // // mylist.forEach(function(element){
 // // element.onclick = function(){
 // //     mylist.forEach((element)=>{
@@ -111,10 +166,27 @@
 // //         element.style.display="none";
 // //     }
 // // })
+// // mydiv.forEach((element)=>{
+// //     element.onclick=function(){
+// //         element.style.display="none";
+// //     }
+// // })
 
 // // let mylist=document.querySelectorAll("ul li ");
 // // let mydiv=document.querySelector(".container");
+// // let mylist=document.querySelectorAll("ul li ");
+// // let mydiv=document.querySelector(".container");
 
+// // mylist.forEach((element)=>{
+// //     element.addEventListener("click",(ele)=>{
+// //         mylist.forEach((element)=>{
+// //             element.classList.remove("active");
+// //         });
+// //         ele.currentTarget.classList.add("active");
+// //         window.localStorage.setItem("color",ele.currentTarget.dataset.color);
+// //         mydiv.style.backgroundColor = ele.currentTarget.dataset.color;
+// //     });
+// // });
 // // mylist.forEach((element)=>{
 // //     element.addEventListener("click",(ele)=>{
 // //         mylist.forEach((element)=>{
@@ -136,7 +208,18 @@
 // // else{
 // //     console.log("no")
 // // }
+// // if(window.localStorage.getItem("color")){
+// //     mydiv.style.backgroundColor = window.localStorage.getItem("color");
+// //     mylist.forEach((element)=>{
+// //         element.classList.remove("active");
+// //     });
+// //     document.querySelector(`[data-color= "${window.localStorage.getItem("color")}"]`).classList.add("active");
+// // }
+// // else{
+// //     console.log("no")
+// // }
 
+// //Session Storage :
 // //Session Storage :
 
 // // window.localStorage.setItem=("color","black");
@@ -144,6 +227,9 @@
 
 // // let myinput=document.querySelector(".name");
 
+// // myinput.onblur = function(){
+// //     window.localStorage.setItem("input",this.value);
+// // }
 // // myinput.onblur = function(){
 // //     window.localStorage.setItem("input",this.value);
 // // }
@@ -192,342 +278,219 @@
 // // console.log(y);
 // // console.log(z);
 
-// // let myFriends=["Ahmed","Sayed","Ali",["Shady","Amr",["Mohamed","Gamal"]]];
-// // // console.log(myFriends[3][2][0]);
+// let myFriends=["Ahmed","Sayed","Ali",["Shady","Amr",["Mohamed","Gamal"]]];
+// // console.log(myFriends[3][2][0]);
 
-// // let [, , ,[a, ,[,b]]] =myFriends;
-// // console.log(a);
-// // console.log(b);
+// let [, , ,[a, ,[,b]]] =myFriends;
+// console.log(a);
+// console.log(b);
 
-// //Swap Variables :
-// // let book="Video";
-// // let video = "book";
+//Swap Variables :
+// let book="Video";
+// let video = "book";
 
-// // let stash = book; //Video
+// let stash = book; //Video
 
-// // book=video; //book
-// // video=stash;
+// book=video; //book
+// video=stash;
 
-// // console.log(book);
-// // console.log(video);
+// console.log(book);
+// console.log(video);
 
-// // [book,video]=[video,book];
-// // console.log(book);
-// // console.log(video);
+// [book,video]=[video,book];
+// console.log(book);
+// console.log(video);
 
-// //destructing objects :
+//destructing objects :
 
-// // const user={
-// //     theName : "IMANE",
-// //     theAge: 22,
-// //     theTitle:"Developpeuse",
-// //     theCountry: "Tangier",
-// // };
-// // console.log(user.theName);
-// // console.log(user.theAge);
-// // console.log(user.theCountry);
-// // console.log(user.theTitle);
+// const user={
+//     theName : "IMANE",
+//     theAge: 22,
+//     theTitle:"Developpeuse",
+//     theCountry: "Tangier",
+// };
+// console.log(user.theName);
+// console.log(user.theAge);
+// console.log(user.theCountry);
+// console.log(user.theTitle);
 
-// // let theName = user.theName;
-// // let theAge = user.theAge;
-// // let theCountry = user.theCountry;
-// // let theTitle = user.theTitle;
+// let theName = user.theName;
+// let theAge = user.theAge;
+// let theCountry = user.theCountry;
+// let theTitle = user.theTitle;
 
-// // console.log(theName);
-// // console.log(theAge);
-// // console.log(theCountry);
-// // console.log(theTitle);
+// console.log(theName);
+// console.log(theAge);
+// console.log(theCountry);
+// console.log(theTitle);
 
-// // ({theName, theAge,theCountry,theTitle} = user);
-// // console.log(theTitle);
+// ({theName, theAge,theCountry,theTitle} = user);
+// console.log(theTitle);
 
-// // let {theName, theAge,theCountry,theTitle} = user;
-// // const user={
-// //     theName : "IMANE",
-// //     theAge: 22,
-// //     theTitle:"Developpeuse",
-// //     theCountry: "Tangier",
-// //     skills :{
-// //         html:70,
-// //         css:80,
-// //     }
-// // };
+// let {theName, theAge,theCountry,theTitle} = user;
+// const user={
+//     theName : "IMANE",
+//     theAge: 22,
+//     theTitle:"Developpeuse",
+//     theCountry: "Tangier",
+//     skills :{
+//         html:70,
+//         css:80,
+//     }
+// };
 
-// // let {theName, theAge, theTitle,theCountry, skills :{html:h,css:c}} = user;
+// let {theName, theAge, theTitle,theCountry, skills :{html:h,css:c}} = user;
 
-// // console.log(`${c}`);
+// console.log(`${c}`);
 
-// // let{html:skillOne,css:skillTwo}=user.skills;
+// let{html:skillOne,css:skillTwo}=user.skills;
 
-// // console.log(skillOne);
+// console.log(skillOne);
 
-// //Destructuring Function :
+//Destructuring Function :
 
-// // showDetails(user); //Appel function
+// showDetails(user); //Appel function 
 
-// // function showDetails({theName:a,theAge,theCountry,skills:{html}}=user){
-// //    console.log(`Your Name is ${a}`);
-// //    console.log(`Your age is ${theAge}`);
-// //    console.log(`Your Name is ${theCountry}`);
-// //    console.log(`Your Skills progress  is ${html}`);
-// // }
+// function showDetails({theName:a,theAge,theCountry,skills:{html}}=user){
+//    console.log(`Your Name is ${a}`);
+//    console.log(`Your age is ${theAge}`);
+//    console.log(`Your Name is ${theCountry}`);
+//    console.log(`Your Skills progress  is ${html}`);
+// }
 
-// // const use={
-// //     theName : "Imane",
-// //     theAge: 22,
-// //     skills:["html", "Css","Javascript"],
-// //     adresses : {
-// //         morocco : "tangier",
-// //         france : "paris",
-// //     }
-// // };
+// const use={
+//     theName : "Imane",
+//     theAge: 22,
+//     skills:["html", "Css","Javascript"],
+//     adresses : {
+//         morocco : "tangier",
+//         france : "paris",
+//     }
+// };
 
-// // let {theName:name,theAge:age,skills:[,,js],adresses:{morocco:moro}}=use;
+// let {theName:name,theAge:age,skills:[,,js],adresses:{morocco:moro}}=use;
 
-// // console.log(name);
-// // console.log(age);
-// // console.log(js);
-// // console.log(moro);
+// console.log(name);
+// console.log(age);
+// console.log(js);
+// console.log(moro);
 
-// // showinfo(use);
-// // function showinfo(obj){
-// //     console.log(`your name is ${obj.theName}`);
-// //     console.log(`your name is ${obj.theAge}`);
-// //     console.log(`your name is ${obj.skills[0]}`);
-// //     console.log(`your adresse is ${obj.adresses.morocco}`);
-// // }
+// showinfo(use);
+// function showinfo(obj){
+//     console.log(`your name is ${obj.theName}`);
+//     console.log(`your name is ${obj.theAge}`);
+//     console.log(`your name is ${obj.skills[0]}`);
+//     console.log(`your adresse is ${obj.adresses.morocco}`);
+// }
 
-// // showinfo(use);
-// // function showinfo({theName, theAge, skills:[html,css,js],adresses:{morocco,france}}=use){
-// //     console.log(`your name is ${theName}`);
-// //     console.log(`your name is ${theAge}`);
-// //     console.log(`your name is ${css}`);
-// //     console.log(`your adresse is ${morocco}`);
-// // }
+// showinfo(use);
+// function showinfo({theName, theAge, skills:[html,css,js],adresses:{morocco,france}}=use){
+//     console.log(`your name is ${theName}`);
+//     console.log(`your name is ${theAge}`);
+//     console.log(`your name is ${css}`);
+//     console.log(`your adresse is ${morocco}`);
+// }
 
-// /*
-//   Destructuring
-//   - Challenge
-// */
+/*
+  Destructuring
+  - Challenge
+*/
 
-// // let chosen = 2;
+// let chosen = 2;
 
-// // let myFriends = [
-// //   { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
-// //   { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
-// //   { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
-// // ];
+// let myFriends = [
+//   { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+//   { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
+//   { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
+// ];
 
-// // showinfo(myFriends);
+// showinfo(myFriends);
 
-// // function showinfo(obj){
-// //     if(chosen === 1){
-// //         console.log(`${obj[0].title}`);
-// //         console.log(`${obj[0].age}`);
-// //         if(obj[0].available === true){
-// //         console.log("available");
-// //         }
-// //         else{
-// //             console.log('not available');
-// //         }
-// //         console.log(`${obj[0].skills[0]} and ${obj[0].skills[1]}`);
-// //     }
-// //     if(chosen === 2){
-// //         console.log(`${obj[1].title}`);
-// //         console.log(`${obj[1].age}`);
-// //         if(obj[1].available === true){
-// //         console.log("available");
-// //         }
-// //         else{
-// //             console.log("not available");
-// //         }
-// //         console.log(`${obj[1].skills[0]} and ${obj[1].skills[1]}`);
-// //     }
-// //     if(chosen === 3){
-// //         console.log(`${obj[2].title}`);
-// //         console.log(`${obj[2].age}`);
-// //         if(obj[2].available === true){
-// //         console.log("available");
-// //         }
-// //         else{
-// //             console.log('not available');
-// //         }
-// //         console.log(`${obj[2].skills[0]} and ${obj[2].skills[1]}`);
-// //     }
+// function showinfo(obj){
+//     if(chosen === 1){
+//         console.log(`${obj[0].title}`);
+//         console.log(`${obj[0].age}`);
+//         if(obj[0].available === true){
+//         console.log("available");
+//         }
+//         else{
+//             console.log('not available');
+//         }
+//         console.log(`${obj[0].skills[0]} and ${obj[0].skills[1]}`);
+//     }
+//     if(chosen === 2){
+//         console.log(`${obj[1].title}`);
+//         console.log(`${obj[1].age}`);
+//         if(obj[1].available === true){
+//         console.log("available");
+//         }
+//         else{
+//             console.log("not available");
+//         }
+//         console.log(`${obj[1].skills[0]} and ${obj[1].skills[1]}`);
+//     }
+//     if(chosen === 3){
+//         console.log(`${obj[2].title}`);
+//         console.log(`${obj[2].age}`);
+//         if(obj[2].available === true){
+//         console.log("available");
+//         }
+//         else{
+//             console.log('not available');
+//         }
+//         console.log(`${obj[2].skills[0]} and ${obj[2].skills[1]}`);
+//     }
 
-// // }
+// }
 
-// // ########### new set() methode :
-// // let mydata = [1,1,1,2,3,"I"];
-// // let myUniquedata = new Set(mydata);
+// let mydata = [1,1,1,2,3,"I"];
+// let myUniquedata = new Set(mydata);
 
-// // console.log(mydata);
-// // console.log(myUniquedata);
-// // console.log(myUniquedata.size);
-// // myUniquedata.add(3).add(4).add(5);
+// console.log(mydata);
+// console.log(myUniquedata);
+// console.log(myUniquedata.size);
+// myUniquedata.add(3).add(4).add(5);
 
-// // console.log(myUniquedata);
+// console.log(myUniquedata);
 
-// // // myUniquedata.delete(3);
-// // console.log(myUniquedata.delete(3));
-// // console.log(myUniquedata.size);
+// // myUniquedata.delete(3);
+// console.log(myUniquedata.delete(3));
+// console.log(myUniquedata.size);
 
-// // console.log(myUniquedata.has(2));
+// console.log(myUniquedata.has(2));
 
-// // myUniquedata.clear();
-// // console.log(myUniquedata);
+// myUniquedata.clear();
+// console.log(myUniquedata);
 
-// //set vs weakset and garbage collector :
+//set vs weakset and garbage collector :
 
-// // let mySet = new Set([1,1,1,2,3,"A","A"]);
+// let mySet = new Set([1,1,1,2,3,"A","A"]);
 
-// // // console.log(mySet);
-// // // console.log(mySet.size);
+// console.log(mySet);
+// console.log(mySet.size);
 
-// // let iterator = mySet.keys(); //keys == values
-// // console.log(iterator);
-// // console.log(iterator.next().value);
-// // console.log(iterator.next().value);
-// // console.log(iterator.next().value);
-// // console.log(iterator.next().value);
-// // console.log(iterator.next());
+// let iterator = mySet.keys();
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+// console.log(iterator.next());
 
-// // let mywekset =new WeakSet([{A:1,B:2}]);
+// let mywekset =new WeakSet([{A:1,B:2}]);
 
 // // let iter = mywekset.keys();
 // // console.log(iter.next().value);
-// // console.log(iter);
 
-// // console.log(mywekset);
+// console.log(mywekset);
 
-// //Map Data type Vs Object :
+//Map Data type Vs Object : 
 
-// // let myObject = {};
-// // let myEmptyobject = Object.create(null);
-// // let mymap = new Map();
+let myObject = {};
+let mymap = new Map();
 
-// // console.log(myObject);
-// // console.log(myEmptyobject);
-// // console.log(mymap);
-
-// // let myNewObject = {
-// //   10: "Number",
-// //   "10" : "String",
-// // }
-// // console.log(myNewObject[10]);
-
-// // let myNewMap = new Map();
-// // myNewMap.set(10, "Number");//key and value
-// // myNewMap.set("10", "String");
-// // myNewMap.set(true, "booléan");
-// // myNewMap.set( function dosomthing(){}, "function");
+console.log(myObject);
+console.log(mymap);
 
 
 
-// // console.log(myNewMap.get(10));
-// // console.log(myNewMap.get("10"));  //Name of keys
 
-// // console.log(myNewObject);
-// // console.log(myNewMap);
-
-// // -Map Method :
-
-// // let myMap = new Map([
-// //   [10, "Number"],
-// //   ["Imane", "string"],
-// //   [true, "boolean"],
-// // ]);
-
-// // console.log(myMap.get("Imane"));
-// // console.log(myMap.delete(true));
-// // console.log(myMap);
-// // console.log(myMap.size);
-// // console.log(myMap.clear());
-// // console.log(myMap);
-
-// //Map Vs WeakMap :
-
-// //Array .from Method :
- 
-// // console.log(Array.from("Imane"));
-// // console.log(Array.from("12345", function (n) {
-// //   return +n + +n;
-// // }));
-
-// // console.log(Array.from("12345",(n) => +n + +n));
-
-// // let myArray = [1, 1, 1, 2, 3, 4];
-
-// // console.log(new Set(myArray));
-
-// // console.log(Array.from(new Set(myArray)));
-
-// // console.log([...new Set(myArray)]);
-
-// // function af() {
-// //   return Array.from(arguments);
-// // };
-// // console.log(af("Imane", "khadija", "kaoutar"));
-
-// //Array.copy Method :
-
-// let myArray = [10, 20, 30, 40, 50, "A", "B"];
-
-// myArray.copyWithin(-2,-1);
-
-// // // myArray.copyWithin(1,-2);
-
-// // // myArray.copyWithin(4,-1);//raymchi 3nd index 6 ye3mlo copy o ynzlo o target index 4
-// console.log(myArray);
-
-// // Array.some Method :
-
-// let nums = [1, 2, 3, 4, 5, 6, 7];
-// let mynumber = 4;
-// let check = nums.some(function (element) {  //function array.some() return true or false
-//   return element < this;
-// }, mynumber);
-
-// console.log(check);
-
-// function checknumber(array, val) {
-//       return array.some(function(e){
-//     return e === val;
-//   })
-// };
-// console.log(checknumber(nums, 33));
-
-
-// let range = {
-//   min: 3,
-//   max: 6,
-// };
-
-// let checkrange = nums.some(function (val) {
-//   return val >= this.min && val <= this.max;
-// }, range);
-
-// console.log(checkrange);
-
-//Array.every method :
-
-let locations = {
-  20: "Place 1",
-  30: "Place 2",
-  10: "Place 3",
-  40: "Place 4",
-};
-
-// let myArray = Array.from(locations);
-
-let array = Object.keys(locations);
-
-let mynumbers = array.map
-console.log(mynumbers);
-let number = 15;
-
-let mytest = mynumbers.every(function (element) {
-  return element > this;
-}, number);
-
-console.log(mytest);
