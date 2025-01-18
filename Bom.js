@@ -492,5 +492,3 @@ console.log(myObject);
 console.log(mymap);
 
 
-
-
